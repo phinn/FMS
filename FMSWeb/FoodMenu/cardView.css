@@ -1,0 +1,53 @@
+﻿.cardView {
+
+}
+
+.cardItem{
+    display:inline-block;
+    height:200px;
+    width:200px;
+    background-color:crimson;
+    margin:10px;
+    float:left;
+}
+
+.cardItem >.image{
+    display:inline-block;
+    height:100px;
+    width:180px;
+    background-color:azure;
+    margin:10px;
+}
+
+.cardItem >.image >.foodImage{
+    display:inline-block;
+    height:100px;
+    width:180px;
+}
+
+.cardItem >.image:hover{
+    position:absolute;
+}
+
+.cardItem >.image:hover img{
+    height:800px;
+    width:600px;
+    
+}
+
+.cardItem >.toolbar{
+    display:inline-block;
+    height:50px;
+    width:180px;
+    margin:10px 0px 10px 10px;
+    text-align:center;
+}
+
+.cardItem >.toolbar> .toolbarItem {
+    display:inline-block;
+    height:25px;
+    width:25px;
+    border:1px solid;
+    float:left;
+    text-align:center;    
+}
