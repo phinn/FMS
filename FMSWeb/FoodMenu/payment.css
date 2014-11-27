@@ -1,0 +1,30 @@
+﻿.bill {
+   text-align:center; 
+}
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:15px;
+    overflow:hidden;
+    float:left;
+    margin:10px;
+    background:#FFF8D7;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    -o-border-radius:10px;
+    border-radius:10px;
+    border:1px solid;
+    width:300px;
+    text-align:center;
+}
+
+li{
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    -o-border-radius:20px;
+}
+
+h3{
+    color:red;
+}

@@ -1,0 +1,31 @@
+﻿ul{
+    list-style-type:none;
+    margin:0;
+    padding:15px;
+    overflow:hidden;
+    float:left;
+    margin:10px;
+    background:#FFF8D7;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    -o-border-radius:10px;
+    border-radius:10px;
+    border:1px solid;
+}
+
+li{
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    -o-border-radius:20px;
+    font-size:x-large;
+    background:red;
+}
+
+.finish {
+    text-decoration:line-through;
+    background:lightgreen;
+}
+
+checkbox{
+    font:x-large;
+}

@@ -1,0 +1,22 @@
+﻿<!DOCTYPE HTML>
+<html ng-app="Store">
+<head>
+    <title>桌号</title>
+    <link href="tableView.css" rel="stylesheet" />
+    <script type="text/javascript" src="../Libs/boot.js"></script>
+    <script type="text/javascript" src="../FoodMenu/tables.js"></script>
+
+</head>
+<body>
+    <div ng-controller="StoreController as store">        
+        <ul class="tableView">
+            <li ng-class="{ 'active': table.full }" ng-repeat="table in store.tables" class="tableItem">
+                <h1>{{table.no}}号桌</h1>
+                <h2>{{table.name}}</h2>
+                <h5 ng-show="table.full">就餐中。。。</h5>
+                <button ng-show="!table.full" ng-click="table.full=true">入座</button>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

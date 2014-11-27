@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html ng-app="Payment">
+<head>
+    <title>付款</title>
+    <link href="payment.css" rel="stylesheet" />
+    <script type="text/javascript" src="../Libs/boot.js"></script>
+    <script src="payment.js"></script>
+</head>
+<body>
+    <div ng-controller="PaymentController as payment">
+        <ul>
+            <h1>{{payment.paymentItem.no}}号桌</h1>
+            <li ng-repeat="dish in payment.paymentItem.dishes">
+                <h4>{{dish.name}} x {{dish.quantity}} = {{dish.unitPrice * dish.quantity|currency:"CNY "}}</h4>
+                <p>{{dish.remark}}</p>                
+            </li>
+            <h3>总金额: {{payment.paymentItem.totalAmount|currency:"CNY "}}</h3>
+            <button>取消</button>
+            <button>确定</button>
+        </ul>
+    </div>
+</body>
+</html>

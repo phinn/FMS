@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html ng-app="Dish">
+<head>
+    <title>配菜</title>
+    <link href="dishes.css" rel="stylesheet" />
+    <script type="text/javascript" src="../Libs/boot.js"></script>
+    <script type="text/javascript" src="../FoodMenu/dishes.js"></script>
+</head>
+<body>
+    <div ng-controller="DishController as dishDispatcher">
+        <ul>
+            <li ng-class="{'finish': dish.finish}" ng-repeat="dish in dishDispatcher.dishes">
+                <input type="checkbox" ng-model="dish.finish" />
+                <label>{{dish.name}}</label>
+                <label>x {{dish.quantity}}</label>
+                <label>({{dish.tableNo}}号桌)</label>
+                <label ng-show="dish.remark!== ''">(</label>
+                <label>{{dish.remark}}</label>
+                <label ng-show="dish.remark!==''">)</label>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

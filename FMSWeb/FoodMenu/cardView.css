@@ -1,37 +1,48 @@
 ﻿.cardView {
-
+    width:100%;
 }
 
 .cardItem{
     display:inline-block;
     height:200px;
-    width:200px;
-    background-color:crimson;
+    width:210px;
+    background-color:#FFF8D7;
     margin:10px;
     float:left;
 }
 
 .cardItem >.image{
     display:inline-block;
-    height:100px;
-    width:180px;
+    /*height:100px;
+    width:180px;*/
     background-color:azure;
     margin:10px;
 }
 
-.cardItem >.image >.foodImage{
-    display:inline-block;
+.cardItem >.image > .foodImage{
+    /*display:inline-block;
     height:100px;
-    width:180px;
+    width:180px;*/
+    text-align:center;
+    border: 5px solid #ccc;  
+    float: left;
+    /*margin: 15px 0;*/  
+    -webkit-transition: all 1s ease;  
+    -moz-transition: all 1s ease;  
+    -o-transition: all 1s ease; 
+
 }
 
-.cardItem >.image:hover{
-    position:absolute;
+.cardItem >.image >.foodImage:hover{
+    /*position:absolute;*/
+    height:130px;
+    width:300px;
+    /*margin-top: 2px;*/  
+    margin-left: -50px;
 }
 
 .cardItem >.image:hover img{
-    height:800px;
-    width:600px;
+    
     
 }
 
@@ -39,15 +50,30 @@
     display:inline-block;
     height:50px;
     width:180px;
-    margin:10px 0px 10px 10px;
+    margin:10px 0px 10px 75px;
     text-align:center;
 }
 
 .cardItem >.toolbar> .toolbarItem {
     display:inline-block;
-    height:25px;
-    width:25px;
+    height:20px;
+    width:20px;
     border:1px solid;
     float:left;
     text-align:center;    
+}
+
+.cardItem .toolbar .toolbarItem a{
+    cursor:pointer;  
+}
+
+.priceZone {
+    display:block;
+    text-align:center;
+    margin-left:75px;
+}
+
+.priceZone label{
+    display:block;
+    float:left;
 }

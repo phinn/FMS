@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html ng-app="Serve">
+<head>
+    <title>上菜</title>
+    <link href="serve.css" rel="stylesheet" />
+    <script type="text/javascript" src="../Libs/boot.js"></script>
+    <script src="serve.js"></script>
+</head>
+<body>
+    <div ng-controller="ServeController as serve">
+        <ul ng-repeat="table in serve.tables">
+            <div>
+                <h1>{{table.no}}号桌</h1>
+                <li ng-class="{'finish': dish.finish}" ng-repeat="dish in table.dishes">
+                    <input type="checkbox" ng-model="dish.finish" />
+                    <label>{{dish.name}}</label>
+                    <label>x {{dish.quantity}}</label>
+                    <label ng-show="dish.remark!== ''">(</label>
+                    <label>{{dish.remark}}</label>
+                    <label ng-show="dish.remark!==''">)</label>
+                </li>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>

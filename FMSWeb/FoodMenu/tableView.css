@@ -1,0 +1,26 @@
+﻿ul.tableView{
+    width:100%;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+li.tableItem{
+    display:inline-block;
+    text-align:center;
+    height:200px;
+    width:210px;
+    border:1px;
+    /*background-color:#FFF8D7;*/
+    background-color:lightgreen;
+    margin:30px;
+    float:left;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    -o-border-radius:20px;
+}
+
+li.tableItem.active {
+    background-color:red;
+}

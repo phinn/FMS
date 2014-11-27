@@ -2,36 +2,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-    <link href="cardView.css" rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" />
+    <script src="../Libs/boot.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").click(function () {
+                $(".menuZone").load("menu.html");
+            });
+        });
+    </script>
 </head>
 <body>
-    <div class="cardView">
-        <div class="cardItem">
-            <div class="image"><img class="foodImage" src="img/1.jpg" style="height:100px;width:180px;"/></div>
-            <div class="toolbar">
-                <![CDATA[]]>
-                <div class="toolbarItem">-</div>
-                <div class="toolbarItem">1</div>
-                <div class="toolbarItem">+</div>
-            </div>
-        </div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
-        <div class="cardItem"></div>
+    <div class="navZone">
+        <ul>
+            <li><a>肉类</a></li>
+            <li><a>水产类</a></li>
+            <li><a>蔬菜类</a></li>
+            <li><a>豆制品</a></li>
+            <li><a>点心</a></li>
+            <li><a>水果</a></li>
+        </ul>
     </div>
+    <div class="menuZone"></div>
 </body>
 </html>
