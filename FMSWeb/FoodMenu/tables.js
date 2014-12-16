@@ -1,4 +1,8 @@
-﻿(function () {
+﻿
+    
+
+(function () {
+    //require(["../Libs/FreeLib/js.extension"], function (util) {
     var app = angular.module('Store', []);
     app.controller('StoreController', function ($scope) {
         this.tables = gem;
@@ -117,4 +121,5 @@
         full: false,
         datetime: ""
     }]
+    //});
 })();

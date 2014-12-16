@@ -2,10 +2,12 @@
 versionInfo.jquery = "1.11.1";
 versionInfo.datajs = "1.0.3";
 versionInfo.angularjs = "1.2.15";
+versionInfo.requirejs = "2.1.15";
 
 var scripts = [
     //{ url: "Libs/jquery-" + versionInfo.jquery + ".min.js" },
-    { url: "Libs/angularjs." + versionInfo.angularjs + ".min.js" }
+    { url: "Libs/angularjs." + versionInfo.angularjs + ".min.js" },
+    //{ url: "Libs/requirejs." + versionInfo.requirejs + ".min.js" }
     //{ url: "Libs/ODataClient/datajs-" + versionInfo.datajs + ".js" },
     //{ url: "Libs/ODataClient/odataclient.js" }
 ];
